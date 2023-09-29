@@ -8,7 +8,7 @@ const Home = () => {
       <Header
         title={
           <p>
-            Taste the World with
+            Discover awesome recipes with
             <br /> Foodipe!
           </p>
         }

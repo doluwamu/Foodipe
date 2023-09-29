@@ -18,11 +18,7 @@ const RecipeDetail = () => {
     try {
       setLoading(true);
 
-      debugger;
-
       const data = await fetchRecipe(id);
-
-      debugger;
 
       setRecipe(data);
 
@@ -78,9 +74,9 @@ const RecipeDetail = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row gap-8 py-20 pxx-4 md:px-10">
+        <div className="w-full flex flex-col gap-8 py-20 px-4 md:px-2 md:flex-row">
           {/* LEFT SIDE */}
-          <div className="w-full md:w-2/4 md:border-r border-slate-800 pr-1">
+          <div className="w-full md:border-r border-slate-800 pr-1 md:w-1/2">
             <div className="flex flex-col gap-5">
               <p className="text-orange-500 text-2xl underline">Ingredients</p>
 
@@ -113,19 +109,19 @@ const RecipeDetail = () => {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="w-full md:w-2/4 2xl:pl-10 mt-20 md:mt-0">
+          <div className="w-full 2xl:pl-10 mt-20 md:mt-0 md:w-1/2">
             {recipes?.length > 0 && (
               <>
                 <p className="text-2xl">Also Try This</p>
 
-                <div className="flex flex-wrap gap-6 px-1 pt-3">
+                <div className="flex jusftify-between gap-4 flex-wrap px-4 pt-3">
                   {recipes?.map((item, index) => (
                     <RecipeCard
                       recipe={item}
                       index={index}
-                      sm={"w-1/3"}
-                      md={"w-1/3"}
-                      lg={"w-1/3"}
+                      smm={"sm:w-1/3"}
+                      mdd={"md:w-full"}
+                      lgg={"lg:w-3/4"}
                     />
                   ))}
                 </div>

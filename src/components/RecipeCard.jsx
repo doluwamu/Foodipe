@@ -1,19 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const RecipeCard = ({ recipe, sm, md, lg }) => {
+const RecipeCard = ({ recipe, smm, mdd, lgg }) => {
   const { image, label, cuisineType, dietLabel, mealType, uri } =
     recipe?.recipe;
 
   const id = uri?.split("#")[1];
 
+  // console.log(lg || "w-1/4");
+
   return (
-    <Link
-      to={`/recipes/${id}`}
-      className={`w-full sm:${sm ?? "w-1/2"} md:${md ?? "w-1/3"} lg:${
-        lg ?? "w-1/4"
-      }`}
-    >
+    <Link to={`/recipes/${id}`} className={`w-full ${smm} ${mdd} ${lgg}`}>
       <div className="bg-_gradient w-full rounded-lg">
         <img
           src={image}

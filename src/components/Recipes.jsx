@@ -73,9 +73,9 @@ const Recipes = () => {
               <RecipeCard
                 recipe={item}
                 key={index}
-                sm={"w-1/3"}
-                md={"w-1/4"}
-                lg={"w-1/5"}
+                smm={"sm:w-1/3"}
+                mdd={"md:w-1/4"}
+                lgg={"lg:w-1/5"}
               />
             ))}
 

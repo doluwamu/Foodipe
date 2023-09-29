@@ -14,7 +14,11 @@ const Navbar = () => {
           href="/"
           className="flex items-center justify-center text-white text-lg cursor-pointer"
         >
-          {/* <img src={Logo} alt="Logo" className='hidden md:block w-8 h-8 lg:w-14 lg:h-14' /> */}
+          <img
+            src={Logo}
+            alt="Logo"
+            className="hidden md:block w-8 h-8 lg:w-14 lg:h-14"
+          />
           Foodipe
         </a>
 

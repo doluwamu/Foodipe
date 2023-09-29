@@ -119,9 +119,10 @@ const RecipeDetail = () => {
                     <RecipeCard
                       recipe={item}
                       index={index}
-                      smm={"sm:w-1/3"}
+                      smm={"sm:w-2/5"}
                       mdd={"md:w-full"}
                       lgg={"lg:w-3/4"}
+                      key={`${index}`}
                     />
                   ))}
                 </div>

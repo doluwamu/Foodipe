@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const RecipeCard = ({ recipe, smm, mdd, lgg }) => {
+const RecipeCard = ({ recipe, smm, mdd, lgg, index }) => {
   const { image, label, cuisineType, dietLabel, mealType, uri } =
     recipe?.recipe;
 

@@ -88,7 +88,7 @@ const Recipes = () => {
           <div className="flex w-full items-center justify-center py-10">
             <Button
               title="Show More"
-              containerStyle="bg-green-800 px-3 py-1 rounded-full text-sm"
+              containerStyle="bg-orange-500 px-3 py-1 rounded-full text-sm"
               handleClick={showMore}
             />
           </div>

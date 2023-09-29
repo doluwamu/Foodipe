@@ -4,7 +4,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <footer className=" py-5 ">
-      <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
+      <div className="container mx-auto px-20 lg:px-20 py-10 flex flex-col gap-10 md:flex-row justify-between">
         <div className="flex flex-col gap-4">
           <p className="font-bold">Foodipe</p>
 
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <p>QUICK LINKS</p>
+          <p className="font-bold">QUICK LINKS</p>
 
           <div className="flex flex-col text-start mb-4 md:mb-0">
             <a
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p>LEGAL</p>
+          <p className="font-bold">LEGAL</p>
           <div className="flex flex-col text-start mb-4 md:mb-0 text-[14px]">
             <a
               href="#"

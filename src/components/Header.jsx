@@ -19,7 +19,7 @@ const Header = ({ title, image, type }) => {
           {title}
         </h1>
         {type && (
-          <p className="text-sm mt-4 text-center text-green-500 bg-[#00000090] px-6 py-4 rounded-full ">
+          <p className="text-sm mt-4 text-center text-orange-500 bg-[#00000090] px-6 py-4 rounded-full ">
             Welcome to Foodipe, your quick stop for great delicacies
             <br className="hidden md:block" /> Discover a treasure trove of
             delectable recipes from around the globe.

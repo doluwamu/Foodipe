@@ -56,25 +56,25 @@ const RecipeDetail = () => {
       <div className="w-full px-4 lg:px-20 pt-5">
         <div className="flex gap-10 items-center justify-center px-4">
           <div className="flex flex-col justify-between">
-            <span className=" text-center border border-gray-500 py-1.5 px-2 rounded-full mb-2">
+            <span className="text-orange-500 text-center border border-gray-500 py-1.5 px-2 rounded-full mb-2">
               {recipe?.calories.toFixed(2)}{" "}
             </span>
 
-            <p className=" text-[12px] md:text-md">CALORIES</p>
+            <p className=" text-[12px] text-center md:text-md">CALORIES</p>
           </div>
 
           <div className="flex flex-col justify-center">
-            <span className="text-center border border-gray-500 py-1.5 rounded-full mb-2">
+            <span className="text-orange-500 text-center border border-gray-500 py-1.5 rounded-full mb-2">
               {recipe?.totalTime}
             </span>
-            <p className=" text-[12px] md:text-md">TOTAL TIME</p>
+            <p className=" text-[12px] text-center md:text-md">TOTAL TIME</p>
           </div>
 
           <div className="flex flex-col justify-center">
-            <span className="text-center border border-gray-500 py-1.5 rounded-full mb-2">
+            <span className="text-orange-500 text-center border border-gray-500 py-1.5 rounded-full mb-2">
               {recipe?.yield}
             </span>
-            <p className=" text-[12px] md:text-md">SERVINGS</p>
+            <p className=" text-[12px] text-center md:text-md">SERVINGS</p>
           </div>
         </div>
 
@@ -82,12 +82,12 @@ const RecipeDetail = () => {
           {/* LEFT SIDE */}
           <div className="w-full md:w-2/4 md:border-r border-slate-800 pr-1">
             <div className="flex flex-col gap-5">
-              <p className="text-green-500 text-2xl underline">Ingredients</p>
+              <p className="text-orange-500 text-2xl underline">Ingredients</p>
 
               {recipe?.ingredientLines?.map((ingredient, index) => {
                 return (
                   <p key={index} className=" flex gap-2">
-                    <AiFillPushpin className="text-green-800 text-xl" />{" "}
+                    <AiFillPushpin className="text-orange-500 text-xl" />{" "}
                     {ingredient}
                   </p>
                 );
@@ -95,7 +95,9 @@ const RecipeDetail = () => {
             </div>
 
             <div className="flex flex-col gap-3 mt-20">
-              <p className="text-green-700 text-2xl underline">Health Labels</p>
+              <p className="text-orange-500 text-2xl underline">
+                Health Labels
+              </p>
 
               <div className="flex flex-wrap gap-4">
                 {recipe?.healthLabels.map((item, index) => (
@@ -103,7 +105,7 @@ const RecipeDetail = () => {
                     className="flex gap-2 bg-[#fff5f518] px-4 py-1 rounded-full "
                     key={index}
                   >
-                    <BsPatchCheck color="green" /> {item}
+                    <BsPatchCheck color="orange" /> {item}
                   </p>
                 ))}
               </div>
